@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Fare Prediction</title>
+</head>
+<body style="background-color: rgb(137, 201, 238);">
+    
+    <h1> Flight Fare Prediction</h1>
+
+
+    <form method="GET" action ="/predict_price">
+
+    
+            <label> Airline: </label>
+            <label for = "airline">
+            <select name = "airline" id="airline">
+                    <option value = "AirAsia">Air Asia</option>
+                    <option value = "Air_India">Air India</option>
+                    <option value = "GO_FIRST">GO FIRST</option>
+                    <option value = "Indigo">Indigo</option>
+                    <option value = "SpiceJet">SpiceJet</option>
+                    <option value = "Vistara">Vistara</option>
+            </select>
+
+
+            <br>
+            <br>
+
+            <label>Class</label>
+            <select name = "class_">
+
+                <option value = "Economy">Economy</option>
+                <option value = "Business"> Business </option>
+
+            </select>
+
+            <br>
+            <br>
+            
+            <label> Source City: </label>
+            <label for = "source_city">
+            <select name = "source_city" id="source_city">
+                    <option value = "Bangalore">Bangalore</option>
+                    <option value = "Chennai">Chennai</option>
+                    <option value = "Delhi">Delhi</option>
+                    <option value = "Hyderabad">Hyderabad</option>
+                    <option value = "Kolkata">Kolkata</option>
+                    <option value = "Mumbai">Mumbai</option>
+            </select>
+
+
+            <br>
+            <br>
+
+            <label> Destination City: </label>
+            <label for = "destination_city">
+            <select name = "destination_city" id="destination_city">
+                    <option value = "Bangalore">Bangalore</option>
+                    <option value = "Chennai">Chennai</option>
+                    <option value = "Delhi">Delhi</option>
+                    <option value = "Hyderabad">Hyderabad</option>
+                    <option value = "Kolkata">Kolkata</option>
+                    <option value = "Mumbai">Mumbai</option>
+            </select>
+
+
+            <br>
+            <br>
+
+            <label> Departure Time: </label>
+            <label for = "departure_time">
+            <select name = "departure_time" id="departure_time">
+                    <option value = "Afternoon">Afternoon</option>
+                    <option value = "Early_Morning">Early Morning</option>
+                    <option value = "Evening">Evening</option>
+                    <option value = "Late_Night">Late Night</option>
+                    <option value = "Morning">Morning</option>
+                    <option value = "Night">Night</option>
+            </select>
+
+
+            <br>
+            <br>
+
+            <label> Arrival Time: </label>
+            <label for = "arrival_time">
+            <select name = "arrival_time" id="arrival_time">
+                    <option value = "Afternoon">Afternoon</option>
+                    <option value = "Early_Morning">Early Morning</option>
+                    <option value = "Evening">Evening</option>
+                    <option value = "Late_Night">Late Night</option>
+                    <option value = "Morning">Morning</option>
+                    <option value = "Night">Night</option>
+            </select>
+
+
+            <br>
+            <br>
+
+            <label>Duration:</label>
+            <input type = "text" name = "duration">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Days Left:</label>
+            <input type = "text" name = "days_left">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Stops:</label>
+            <select name = "stops">
+
+                <option value = "zero">0</option>
+                <option value = "one">1</option>
+                <option value = "two_or_more">more than 2</option>
+
+            </select>
+
+            <br>
+            <br>
+
+
+            <br>
+            <input type = "submit" value = "SUBMIT">
+
+            <br>
+            <p>Your Flight Prediction Charges will be <b>{{ prediction }} /- Rs.</b> Only. </p>
+
+        </form>
+
+
+</body>
+
+
+</html>
